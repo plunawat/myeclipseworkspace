@@ -1,0 +1,12 @@
+package com.prl;
+
+public class LamdaTest {
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+interface I11	{
+	public int sumTest(int i1, int i2);
+}

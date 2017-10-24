@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 0.635 sec <<< FAILURE! - in TestSuite
+setUpClass(cucumberTestNG.MyTestRunner)  Time elapsed: 0.484 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: gherkin/formatter/Reporter
+Caused by: java.lang.ClassNotFoundException: gherkin.formatter.Reporter
+
+tearDownClass(cucumberTestNG.MyTestRunner)  Time elapsed: 0.491 sec  <<< FAILURE!
+java.lang.NullPointerException
+

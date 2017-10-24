@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="AutomationFinally"/>
+			<item value="JBehaveTest"/>
+			<item value="com.restart"/>
+			<item value="abc"/>
+			<item value="com.prl.cucumbertest"/>
+			<item value="com.prl.cucumber"/>
+			<item value="AppiumMavenTestNG"/>
+			<item value="com.maventest"/>
+		</list>
+		<list key="name">
+			<item value="Test Name"/>
+		</list>
+		<list key="artifactId">
+			<item value="MyAutomationSkill"/>
+			<item value="JBehaveTestArti"/>
+			<item value="MyTest1"/>
+			<item value="xyz"/>
+			<item value="cucumberTestNG"/>
+			<item value="AppiumMavenTestNG"/>
+			<item value="LearnMaven"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="1.0"/>
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.EditDependencyDialog">
+		<item value="480" key="width"/>
+		<item value="560" key="x"/>
+		<item value="130" key="y"/>
+		<item value="450" key="height"/>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="560" key="x"/>
+		<item value="76" key="y"/>
+		<item value="531" key="height"/>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\parikshit\Desktop\Testdiary-master\Testdiary-master\CucumberTestNG"/>
+			<item value="C:\Users\parikshit\Desktop\cucumber-jvm-template-master\cucumber-jvm-template-master"/>
+			<item value="C:\PRL\Altimetrik\QEAutomation\QE-COE\modeesta\Branches\Feature\TestlinkAdapter"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\parikshit\workspace\SeleniumRetsart"/>
+			<item value="C:\Users\parikshit\workspace\LearnMaven\pom.xml"/>
+			<item value="C:\Users\parikshit\workspace\CucumberTestNG"/>
+			<item value="C:\Users\parikshit\workspace\Appium"/>
+			<item value="C:\Users\parikshit\workspace\MyArtifact1\pom.xml"/>
+			<item value="C:\Users\parikshit\workspace\JavaTest"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.editor.dialogs.ManageDependenciesDialog">
+		<item value="613" key="width"/>
+		<item value="494" key="x"/>
+		<item value="130" key="y"/>
+		<item value="450" key="height"/>
+	</section>
+</section>

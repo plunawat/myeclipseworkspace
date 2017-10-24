@@ -1,0 +1,14 @@
+package com.prl;
+
+public class StringTest {
+	public static void main(String[] args) {
+		String str = "My name is parikshit";
+		System.out.println(String.join("*", str.split("\\s+")));
+		
+		String s1 = "AAA";
+		String s2 = new String("AAA");
+		
+		System.out.println(s1.compareTo(s2));
+	}
+
+}

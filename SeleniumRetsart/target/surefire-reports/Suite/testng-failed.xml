@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <parameter name="Param" value="Suite Level"/>
+  <test name="Test1(failed)">
+    <classes>
+      <class name="com.prl.TestClass1">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="testMethod1"/>
+          <include name="initiateDriver"/>
+        </methods>
+      </class> <!-- com.prl.TestClass1 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

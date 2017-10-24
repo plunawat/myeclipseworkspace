@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Child-Suite2">
+
+	<test name="Test1">
+		<classes>
+			<class name="com.prl.TestClass2"></class>
+			<class name="com.prl.TestClass4"></class>
+		</classes>
+	</test>
+	<test name="Test2">
+		<classes>
+			<class name="com.prl.TestClass3"></class>
+		</classes>
+	</test>
+
+</suite>

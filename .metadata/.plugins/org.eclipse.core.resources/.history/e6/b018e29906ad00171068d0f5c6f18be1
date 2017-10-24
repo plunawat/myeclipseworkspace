@@ -1,0 +1,33 @@
+package com.prl;
+
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class PageObjectModel {
+	
+	@FindBy(xpath="//li[.='Coffee']")
+	@CacheLookup
+	WebElement tr1;
+	
+	private WebDriver driver;
+	
+	public PageObjectModel(WebDriver driver)	{
+		PageFactory.initElements(driver, this);
+		this.driver = driver;
+	}
+
+	public String getCellValue()	{
+		
+/*		System.out.println(tr1.getSize().getHeight());
+		System.out.println(tr1.getSize().getWidth());*/
+		
+		Point p1 = tr1.getLocation();
+		System.out.println(p1.getX());
+		System.out.println(p1.getY());
+		return tr1.getText();
+	}
+}

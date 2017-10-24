@@ -1,0 +1,35 @@
+package com.prl;
+
+public class LamdaTest {
+	public static void main(String[] args) {
+		
+		
+		new I11()	{
+			
+			int i=100;
+
+			@Override
+			public void sumTest(int i1, int i2) {
+				i1 =i;i2=i;
+				System.out.println(i1 + i2);
+				
+			}
+			
+		};
+		
+		new LamdaTest().abc(
+		(i1,i2) -> System.out.println("nailed  ???")	
+		);
+	
+	
+	}
+	
+	public void abc(I11 interface1)	{
+			System.out.println("Fuck it");
+	}
+
+}
+
+interface I11	{
+	public void sumTest(int i1, int i2);
+}

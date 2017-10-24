@@ -1,0 +1,17 @@
+package com.misc;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Misc4 {
+	public static void main(String[] args) {
+		String str = "My name is    parikshit";
+		
+		List<String> wordList = Arrays.asList(str.split("\\s"));
+		
+		for(String s : wordList)	{
+			System.out.println(s);
+		}
+	}
+
+}

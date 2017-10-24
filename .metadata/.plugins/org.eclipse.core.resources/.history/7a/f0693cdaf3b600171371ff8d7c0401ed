@@ -1,0 +1,8 @@
+package com.prl;
+
+public class JBehaveTestClass {
+	
+	@Given("a login screen")
+	
+
+}

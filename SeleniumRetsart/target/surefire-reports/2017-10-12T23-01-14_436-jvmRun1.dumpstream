@@ -1,0 +1,69 @@
+# Created on 2017-10-12T23:03:15.492
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+# Created on 2017-10-12T23:05:01.797
+Unexpected IOException with stream: Test Method 1 is executed
+
+
+# Created on 2017-10-12T23:05:13.401
+Unexpected IOException: 6,1,com.prl.TestClass6,testMethod1(com.prl.TestClass6),null,null,null
+
+
+# Created on 2017-10-12T23:05:13.403
+Unexpected IOException: 5,1,com.prl.TestClass6,testMethod3(com.prl.TestClass6),com.prl.TestClass6,null,null
+
+
+# Created on 2017-10-12T23:05:13.404
+Unexpected IOException with stream: Test Method 3 is executed
+
+
+# Created on 2017-10-12T23:05:13.406
+Unexpected IOException: 6,1,com.prl.TestClass6,testMethod3(com.prl.TestClass6),null,null,null
+
+
+# Created on 2017-10-12T23:05:13.408
+Unexpected IOException: 5,1,com.prl.TestClass6,testMethod5(com.prl.TestClass6),com.prl.TestClass6,null,null
+
+
+# Created on 2017-10-12T23:05:13.408
+Unexpected IOException with stream: Test Method 5 is executed
+
+
+# Created on 2017-10-12T23:05:13.409
+Unexpected IOException: 6,1,com.prl.TestClass6,testMethod5(com.prl.TestClass6),null,null,null
+
+
+# Created on 2017-10-12T23:05:13.411
+Unexpected IOException: 5,1,com.prl.TestClass6,testMethod4(com.prl.TestClass6),com.prl.TestClass6,null,null
+
+
+# Created on 2017-10-12T23:05:13.411
+Unexpected IOException with stream: Test Method 4 is executed
+
+
+# Created on 2017-10-12T23:05:13.412
+Unexpected IOException: 6,1,com.prl.TestClass6,testMethod4(com.prl.TestClass6),null,null,null
+
+
+# Created on 2017-10-12T23:05:13.414
+Unexpected IOException: 5,1,com.prl.TestClass6,testMethod2(com.prl.TestClass6),com.prl.TestClass6,null,null
+
+
+# Created on 2017-10-12T23:05:13.418
+Unexpected IOException with stream: Test Method 2 is executed
+
+
+# Created on 2017-10-12T23:05:13.419
+Unexpected IOException: 6,1,com.prl.TestClass6,testMethod2(com.prl.TestClass6),null,null,null
+
+
+# Created on 2017-10-12T23:05:13.667
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

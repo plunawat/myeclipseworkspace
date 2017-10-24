@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HTMLPages/HTMLTables&apos; to &apos;HTMLTables.html&apos;" description="Rename resource &apos;HTMLTables&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HTMLTables" name="HTMLTables.html" stamp="1481343435151" updateReferences="true"/>
+</session>

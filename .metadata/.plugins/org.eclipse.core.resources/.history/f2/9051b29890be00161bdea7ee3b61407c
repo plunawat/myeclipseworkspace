@@ -1,0 +1,86 @@
+package com.prl;
+
+import java.io.FileNotFoundException;
+import java.util.Comparator;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class MapTest {
+	public static void main(String[] args) {
+		
+		Person p1 = new Person(33,"User 1","PAN1");
+		Person p2 = new Person(36,"User 2","PAN2");
+		Person p3 = new Person(45,"User 3","PAN3");
+		Person p4 = new Person(89,"User 4","PAN4");
+		Person p5 = new Person(67,"User 5","PAN5");
+		
+		
+		Map<Person,String> personMap = new TreeMap<>();
+		
+		personMap.put(p1, p1.name);
+		personMap.put(p2, p2.name);
+		personMap.put(p3, p3.name);
+		personMap.put(p4, p4.name);
+		personMap.put(p5, p5.name);
+		personMap.put(null, null)
+		
+		for(String str : personMap.values())	{
+			System.out.println(str);
+		}
+		
+	}
+	
+	public MapTest abc() throws FileNotFoundException	{
+		return null;
+	}
+	
+}
+
+class XYZZ extends MapTest	{
+	public XYZZ abc() throws FileNotFoundException	{
+		Set<String> l1 = new LinkedHashSet<>();
+		return null;
+		
+	}
+	
+}
+
+class Person implements Comparable<Person>	{
+	int age;
+	String name;
+	String pancard;
+	
+	public Person(int age,String name, String pancard)	{
+		this.age = age;
+		this.name = name;
+		this.pancard = pancard; 
+	}
+	
+	public boolean equals(Object o)	{
+		if((o instanceof Person) )	{
+			if(this.pancard == ((Person)o).pancard)	{
+				return true;
+			} else {
+				return false;
+			}
+		}
+		return false;
+	}
+
+	@Override
+	public int compareTo(Person p) {
+		return Integer.valueOf(this.age).compareTo(Integer.valueOf(p.age));
+	}
+}
+
+class PersonComparator implements Comparator<Person>	{
+
+	@Override
+	public int compare(Person o1, Person o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

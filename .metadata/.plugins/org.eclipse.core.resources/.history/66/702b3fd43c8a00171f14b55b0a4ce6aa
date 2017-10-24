@@ -1,0 +1,57 @@
+package com.prl;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.apache.poi.util.SystemOutLogger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class SeleniumLocators {
+	
+	public static void main(String[] args) throws InterruptedException, IOException {
+		
+		Runtime rt = Runtime.getRuntime();
+		rt.exec("TASKKILL /F /IM chromedriver.exe");
+		rt.exec("TASKKILL /F /IM chrome.exe");
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\PRL\\Study\\Libraries\\ChromeDriver\\chromedriver.exe");
+
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--start-maximized");
+		
+		ChromeDriver driver = new ChromeDriver(options);
+		
+		driver.get("file:///C:/Users/parikshit/workspace/HTMLPages/HTMLTables.html");
+		
+		WebElement el1 = driver.findElement(By.xpath("//table/tbody/tr[last()]"));
+		
+//		System.out.println(driver.findElement(By.xpath("//table//tr[td>4]")).getText());
+		//System.out.println(el1.findElement(By.xpath("//td[3]")).getText());
+		
+//		System.out.println(driver.findElement(By.xpath("//table//*/td[1]")).getText());
+		
+		
+		List<WebElement> weList =  driver.findElements(By.xpath("//td[1] | //td[2]"));
+		
+		for(WebElement el : weList)	{
+//			System.out.println(el.getText());
+		}
+		
+		//System.out.println(driver.findElement(By.xpath("//table//tr[3]/td[1] | //table//tr[4]/td[1]")).getText());
+		//System.out.println(driver.findElement(By.xpath("//td[1] | //td[2]")).getText());
+		
+		System.out.println(driver.findElement(By.xpath("//td[text()='Jackson']/ancestor::table//td[1]")).getText());
+		System.out.println(driver.findElement(By.xpath("//table/descendant::tr/td[@id='31']")));
+		
+		
+		driver.quit();
+		
+		
+		
+		
+			
+	}
+}

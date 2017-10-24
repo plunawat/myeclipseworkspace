@@ -1,0 +1,27 @@
+package com.prl.stringtest;
+
+public class StringTestNew {
+	public static void main(String[] args) {
+		
+		String s1 = new String("ABC");
+		String s2 = "ABC";
+		String s3 = "ABC";
+		System.out.println(s1 == s2);
+		System.out.println(s2==s3);
+		System.out.println(s1==s3);
+		
+		char[] c1 = new char[] {'A','B','C'};
+		String s4 = new String(c1);
+		
+		StringBuilder sb1 = new StringBuilder("ABC");
+		String s5 = new String(sb1);
+		
+		StringBuffer sbr1 = new StringBuffer("ABC");
+		String sb6 = new String(sbr1);
+		
+		System.out.println(s4 == s5);
+		System.out.println(s5 == sb6);
+		
+	}
+
+}

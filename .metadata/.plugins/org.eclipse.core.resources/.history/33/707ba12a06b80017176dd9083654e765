@@ -1,0 +1,45 @@
+package com.prl;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
+
+public class MiscSeleniumTest {
+
+	public static void main(String[] args) throws IOException {
+		
+		System.setProperty("webdriver.chrome.driver", "C:/PRL/Study/Libraries/ChromeDriver/chromedriver.exe");
+		
+		Runtime.getRuntime().exec("Taskkill /IM chromedriver.exe /F");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		
+		
+		WebDriver driver = new ChromeDriver(options);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+		
+		
+//		driver.get("file:///C:/Users/parikshit/workspace/HTMLPages/HTMLTables.html");
+		driver.get("file:///C:/Users/parikshit/workspace/HTMLPages/Select.html");
+//		driver.get("file:///C:/Users/parikshit/workspace/HTMLPages/DelayElementAdded.html");
+		
+//		new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("li:not([id])")));
+		/*WebElement el = driver.findElement(By.xpath("//th[.='Firstname']"));
+		System.out.println(el.isDisplayed());
+		System.out.println(el.getCssValue("display"));
+		*/
+		
+		Select s1 = new Select(driver.findElement(By.name("color")));
+		System.out.println(s1.isMultiple());
+		
+		Alert a1 = driver.switchTo().alert();
+	}
+
+}

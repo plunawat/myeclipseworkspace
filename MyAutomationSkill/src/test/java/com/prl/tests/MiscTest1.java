@@ -1,0 +1,29 @@
+package com.prl.tests;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.prl.poms.MiscPomTest;
+
+public class MiscTest1 {
+	
+/*	private WebDriver driver;
+	
+	@BeforeClass
+	public void initializeDriver() throws IOException	{
+		Runtime.getRuntime().exec("Taskkill /IM chromedriver.exe /F");
+		driver = new ChromeDriver();
+	}
+	
+	@Test
+	public void miscTest1()	{
+		driver.get("file:///C:/Users/parikshit/workspace/HTMLPages/HTMLTables.html");
+		MiscPomTest mp1 = new MiscPomTest(driver);
+		mp1.printThings();
+	}*/
+
+}

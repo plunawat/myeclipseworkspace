@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<style>
+.hidden {
+	height: 100px;
+	width: 500px;
+	background-color: powderblue;
+}
+</style>
+<body>
+
+	<ul id="myList">
+		<li id="li1" class="hidden" style="color: blue;">Coffee</li>
+		<li id="li1" class="hidden" style="color: blue;">Tea</li>
+	</ul>
+
+
+	<script>
+		window.onload = setTimeout(function() {
+			var node = document.createElement("LI");
+			var textnode = document.createTextNode("Water");
+			node.appendChild(textnode);
+			document.getElementById("myList").appendChild(node);
+		}, 10000);
+	</script>
+
+</body>
+</html>

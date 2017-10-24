@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HTMLPages/MSCH5_1.html&apos; to &apos;MSCH5_Index.html&apos;" description="Rename resource &apos;MSCH5_1.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MSCH5_1.html" name="MSCH5_Index.html" stamp="1506919928532" updateReferences="true"/>
+</session>

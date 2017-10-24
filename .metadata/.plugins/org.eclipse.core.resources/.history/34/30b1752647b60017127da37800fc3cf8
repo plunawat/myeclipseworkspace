@@ -1,0 +1,23 @@
+package com.prl;
+
+import com.google.gson.Gson;
+
+public class GSONTest {
+	public static void main(String[] args) {
+		Gson gSon = new Gson();
+		String json = gSon.toJson(new Person11("User1", 25, "PAN1"));
+		System.out.println(json);
+	}
+}
+
+class Person11 {
+	private String name;
+	private int age;
+	private String PAN;
+
+	Person11(String name, int age, String PAN) {
+		this.name = name;
+		this.age = age;
+		this.PAN = PAN;
+	}
+}

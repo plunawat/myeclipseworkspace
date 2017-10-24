@@ -1,0 +1,47 @@
+package com.prl.tests;
+
+import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.prl.poms.LoginStart;
+import com.prl.utilities.Utilities;
+
+public class TestClass1 {
+
+	private WebDriver driver;
+
+	@BeforeClass
+	public void initializeDriver() throws IOException {
+		Runtime.getRuntime().exec("Taskkill /IM chromedriver.exe /F");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		driver = new ChromeDriver(options);
+	}
+
+	@Test
+	public void test1001() {
+		driver.get("http://rhel65:10000/unica/jsp/frameworklogin.jsp");
+		LoginStart loginStart = new LoginStart(driver);
+		loginStart.enterUserName("asm_admin").enterPassword("Qwerty$007").clickLogin();
+		assertEquals("IBM - Users", driver.getTitle());
+	}
+	
+	@Test(dependsOnMethods= {"test1001"})
+	public void test1002() {
+		Utilities.checkPageReadyState(driver);
+		
+	}
+
+	@AfterClass
+	public void quitWebDriver()	{
+		driver.quit();
+	}
+}

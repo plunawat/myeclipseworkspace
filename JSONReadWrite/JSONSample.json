@@ -1,0 +1,11 @@
+{
+	"name": "Parikshit",
+	"age": 34,
+	"position": "Boss",
+	"salary": 1000000000,
+	"skills": [
+		"java",
+		"python",
+		"shell"
+	]
+}

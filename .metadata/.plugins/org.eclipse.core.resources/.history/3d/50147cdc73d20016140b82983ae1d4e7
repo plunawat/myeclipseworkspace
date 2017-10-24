@@ -1,0 +1,20 @@
+package com.prl.collections;
+
+public class WrapperTest {
+	
+	public static void main(String[] args) {
+		Integer i1 = 10;
+		Integer i2 = new Integer("100");
+		Integer i3 = Integer.valueOf("100");
+		try	{
+			int j= Integer.parseInt("2001KL");
+		} catch(NumberFormatException ne)	{
+			ne.printStackTrace();
+		}
+		
+		System.out.println(i1.intValue());
+		System.out.println(i2.intValue());
+		System.out.println(i3.intValue());
+	}
+
+}

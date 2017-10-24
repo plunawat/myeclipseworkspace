@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.codehaus.groovy.eclipse.groovyScriptLaunchConfiguration">
+<stringAttribute key="org.codehaus.groovy.eclipse.launch.runType" value="com.prl.WorkWithJson"/>
+<listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
+<listEntry value="C:\Users\parikshit\workspace\GroovyTest\bin"/>
+<listEntry value="C:\PRL\Study\eclipseNeo\plugins\org.codehaus.groovy_2.4.8.xx-201701281950-e46\lib\groovy-all-2.4.8.jar"/>
+<listEntry value="C:\PRL\Study\eclipseNeo\plugins\org.codehaus.groovy_2.4.8.xx-201701281950-e46\lib\bsf-2.4.0.jar"/>
+<listEntry value="C:\PRL\Study\eclipseNeo\plugins\org.codehaus.groovy_2.4.8.xx-201701281950-e46\lib\ivy-2.4.0.jar"/>
+<listEntry value="C:\PRL\Study\eclipseNeo\plugins\org.codehaus.groovy_2.4.8.xx-201701281950-e46\lib\servlet-api-2.4.jar"/>
+<listEntry value="C:\Users\parikshit\.groovy\greclipse\global_dsld_support"/>
+<listEntry value="C:\PRL\Study\eclipseNeo\plugins\org.codehaus.groovy_2.4.8.xx-201701281950-e46\plugin_dsld_support\"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.codehaus.groovy.tools.GroovyStarter"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--classpath &quot;${workspace_loc:\GroovyTest}\src;${workspace_loc:\GroovyTest}\bin&quot; --main groovy.ui.GroovyMain &quot;${resource_loc:/GroovyTest/src/com/prl/WorkWithJson.groovy}&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="GroovyTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" -Dgroovy.home=&quot;${groovy_home}&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:\GroovyTest}"/>
+</launchConfiguration>

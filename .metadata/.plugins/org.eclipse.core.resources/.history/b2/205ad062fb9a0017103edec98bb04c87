@@ -1,0 +1,12 @@
+package com.prl.stringtest;
+
+public class StringBuilderTest {
+	
+	public static void main(String[] args) {
+		
+	StringBuilder sb1 = new StringBuilder();
+	System.out.println(sb1.length());
+	}
+	
+
+}

@@ -1,0 +1,28 @@
+package com.prl.stringtest;
+
+public class StringBuilderTest {
+	
+	public static void main(String[] args) {
+		
+		StringBuilderTest st=null;
+		StringBuilder sb1 = new StringBuilder();
+		
+		String s1 = "ABCDEF";
+		
+		System.out.println(s1.replace("ZZZ", "Q"));
+		
+		char[] c1 = new char[]{'J','A','V','A','8'};
+		//sb1.append(new StringBuilderTest()).append('A').append(true).append(-10.2).append(100);
+		//sb1.append(new char[]{'J','A','V','A','8'},2,3);
+		sb1.append(st);
+		System.out.println(sb1);
+		System.out.println(sb1.insert(2, "JAVA8",1,3));
+		System.out.println(sb1.replace(2,5, "qaaaaaaaaaaaaaaaaaaa"));
+		System.out.println(sb1.delete(3, sb1.length()-1));
+	}
+	
+	public String toString()	{
+		return "Great work Parikshit";
+	}
+
+}

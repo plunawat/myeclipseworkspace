@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Child-Suite3">
+	<test name="Test1">
+		<!-- <groups> <define name="Grp1"> <include name="Group1Class2"></include> 
+			</define> <run> <include name="Grp1"></include></run> </groups> -->
+		<classes>
+<!-- 			<class name="com.prl.TestClass2"></class> -->
+			<class name="com.prl.TestClass1"></class>
+		</classes>
+	</test>
+	<parameter name="Param1" value="Suite Level"></parameter>
+</suite>

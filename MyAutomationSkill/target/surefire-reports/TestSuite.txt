@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 14.517 s <<< FAILURE! - in TestSuite
+test1001(com.prl.tests.TestClass1)  Time elapsed: 1.079 s  <<< FAILURE!
+java.lang.AssertionError: expected [IBM Marketing Platform Login] but found [IBM - Users]
+	at com.prl.tests.TestClass1.test1001(TestClass1.java:52)
+

@@ -1,0 +1,40 @@
+package com.prl;
+
+import java.util.Comparator;
+
+public class ObjectMethodsTest {
+	public static void main(String[] args) {
+		Person p1 = new Person("Parikshit","PAN0001",34);
+		Person p2 = new Person("Parikshit","PAN0001",34);
+		Person p3 = p1;
+		
+		System.out.println(p1 == p2);
+		System.out.println(p1.equals(p2));
+		System.out.println(p1.equals(p3));
+		System.out.println(p1 == p3);
+	}
+
+}
+
+class Person implements Comparator<Person>	{
+	private String name;
+	private String pan;
+	private int age;
+	
+	public Person(String name,String pan, int age)	{
+		this.name = name;
+		this.pan = pan;
+		this.age = age;
+	}
+
+	@Override
+	public int compare(Person o1, Person o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+/*	@Override
+	public String toString()	{
+		return name+"-"+pan+"-"+age;
+	}*/
+}

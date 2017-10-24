@@ -1,0 +1,21 @@
+package com.prl;
+
+public class LamdaTest {
+	public static void main(String[] args) {
+		
+		new LamdaTest().abc(
+		(i1,i2) -> System.out.println(i1+i2)	
+		);
+	
+	
+	}
+	
+	public void abc(I11 interface1)	{
+			
+	}
+
+}
+
+interface I11	{
+	public void sumTest(int i1, int i2);
+}

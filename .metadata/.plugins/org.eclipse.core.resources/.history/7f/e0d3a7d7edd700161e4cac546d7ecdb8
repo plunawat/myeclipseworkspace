@@ -1,0 +1,45 @@
+package com.prl.nio;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.nio.file.attribute.BasicFileAttributeView;
+import java.nio.file.attribute.FileTime;
+
+public class FilesTest {
+	public static void main(String[] args) throws IOException {
+		
+		Path p1 = Paths.get("C:\\Test99\\ABC.txt");
+		
+		System.out.println(Files.getAttribute(p1, "creationTime"));
+		
+		BasicFileAttributeView bf = Files.getFileAttributeView(p1, BasicFileAttributeView.class);
+	}
+	
+	public static void createFiles(Path p1) throws IOException	{
+		if(!Files.exists(p1))	{
+			Files.createFile(p1);
+		}
+	}
+	
+	public static void deleteFiles(Path p1) throws IOException	{
+		
+		System.out.println(Files.deleteIfExists(p1));
+	}
+	
+	public static void moveFiles(Path p1, Path p2) throws IOException	{
+		Files.move(p1, p2);
+	}
+	
+	public static void resolveTest(Path p1, Path p2)	{
+		System.out.println(p1.resolve("test1\\test2"));
+	}
+}
+
+interface ABC	{
+	
+}

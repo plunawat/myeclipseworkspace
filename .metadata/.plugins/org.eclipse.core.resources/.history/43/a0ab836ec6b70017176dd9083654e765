@@ -1,0 +1,38 @@
+package com.prl;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class MiscSeleniumTest {
+
+	public static void main(String[] args) throws IOException {
+		
+		System.setProperty("webdriver.chrome.driver", "C:/PRL/Study/Libraries/ChromeDriver/chromedriver.exe");
+		
+		Runtime.getRuntime().exec("Taskkill /IM chromedriver.exe /F");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		
+		
+		WebDriver driver = new ChromeDriver(options);
+		
+//		driver.get("file:///C:/Users/parikshit/workspace/HTMLPages/HTMLTables.html");
+		driver.get("file:///C:/Users/parikshit/workspace/HTMLPages/DelayElementAdded.html");
+		
+		((JavascriptExecutor)driver).executeScript("document.onload=alert('Page Loaded')");
+	}
+
+}

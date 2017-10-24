@@ -1,0 +1,17 @@
+package com.prl.tests;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
+
+public class MiscTest1 {
+	
+	private WebDriver driver;
+	
+	@BeforeClass
+	public void initializeDriver() throws IOException	{
+		Runtime.getRuntime().exec("Taskkill /IM chromedriver.exe /F");
+	}
+
+}

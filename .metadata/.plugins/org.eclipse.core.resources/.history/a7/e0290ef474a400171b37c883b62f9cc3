@@ -1,0 +1,46 @@
+package com.prl;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class ObjectMethodsTest {
+	
+	public static void main(String[] args) {
+		
+		Person p1 = new Person("Parikshit","PAN0001",34);
+		Person p2 = new Person("Parikshit","PAN0001",34);
+		Person p3 = p1;
+		
+		List<Person> lP1 = new ArrayList<>();
+		List<Person> lP2 = new ArrayList<>(lP1);
+		List<Person> lp3 = new ArrayList<>(100);
+		
+		lP1.add(new Person("Name1","PAN0001",34));
+		lP1.add(new Person("Name2","PAN0002",43));
+		lP1.add(new Person("Name3","PAN0003",79))
+	}
+}
+
+class Person implements Comparator<Person>	{
+	private String name;
+	private String pan;
+	private int age;
+	
+	public Person(String name,String pan, int age)	{
+		this.name = name;
+		this.pan = pan;
+		this.age = age;
+	}
+
+	@Override
+	public int compare(Person o1, Person o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+/*	@Override
+	public String toString()	{
+		return name+"-"+pan+"-"+age;
+	}*/
+}

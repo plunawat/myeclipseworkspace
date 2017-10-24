@@ -1,0 +1,30 @@
+package com.pom.test;
+
+import java.net.MalformedURLException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class GridTest {
+
+	public static void main(String[] args) throws MalformedURLException {
+		
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome(); 
+		
+		//WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+		System.setProperty("webdriver.chrome.driver", "C:\\PRL\\Study\\Libraries\\ChromeDriver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.navigate().to("file:///C:/Users/parikshit/workspace/HTMLPages/Form.html");
+		WebElement wl = driver.findElement(By.tagName("input"));
+		
+		Point p = wl.getLocation();
+		System.out.println(p.getX()+" "+p.getY());
+		
+		
+	}
+}

@@ -1,0 +1,33 @@
+package com.prl.poms;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class MiscPomTest {
+	
+	@FindAll({
+		@FindBy(xpath="//tr[2]/td"),
+		@FindBy(xpath="//tr[3]/td"),
+		@FindBy(xpath="//tr[4]/td")
+	})
+	private List<WebElement> list1;
+	
+	public MiscPomTest(WebDriver driver)	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void printThings()	{
+		System.out.println("Inside needed method");
+		System.out.println(list1.size());
+		for(WebElement el : list1)	{
+			System.out.println(el.getText());
+		}
+	}
+	
+	
+}

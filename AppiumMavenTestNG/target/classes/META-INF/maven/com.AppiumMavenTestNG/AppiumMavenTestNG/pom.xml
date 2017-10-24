@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.AppiumMavenTestNG</groupId>
+	<artifactId>AppiumMavenTestNG</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>This is Appium project with Maven and TestNG</description>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<selenium.version>3.0.1</selenium.version>
+		<threads>1</threads>
+		<browser>ANDROID</browser>
+		<remoteAddress>http://127.0.0.1:4725/wd/hub</remoteAddress>
+
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.9</version>
+		</dependency>
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.6.0</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.19.1</version>
+				<!--<configuration> <suiteXmlFiles> <suiteXmlFile>testng.xml</suiteXmlFile> 
+					</suiteXmlFiles> <parallel>methods</parallel> <threadCount>${threads}</threadCount> -->
+				<configuration>
+					<includes>
+						<include>**/*WD.java</include>
+					</includes>
+					<systemProperties>
+						<browser>${browser}</browser>
+						<remoteAddress>${remoteAddress}</remoteAddress>
+						<webdriver.chrome.driver>C:/PRL/Study/Libraries/ChromeDriver/chromedriver.exe</webdriver.chrome.driver>
+					</systemProperties>
+					<!-- <properties> <property> <name>surefire.testng.verbose</name> <value>10</value> 
+						</property> </properties> -->
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

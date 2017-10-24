@@ -1,0 +1,28 @@
+package com.prl.tests;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.prl.poms.LoginStart;
+import com.prl.poms.MiscPomTest;
+
+public class TestClass1 {
+
+	private WebDriver driver;
+
+	@BeforeClass
+	public void initializeDriver() throws IOException {
+		Runtime.getRuntime().exec("Taskkill /IM chromedriver.exe /F");
+		driver = new ChromeDriver();
+	}
+
+	@Test
+	public void test1001() {
+		driver.get("http://rhel65:10000/unica/jsp/frameworklogin.jsp");
+		LoginStart ls = new LoginStart();
+	}
+}

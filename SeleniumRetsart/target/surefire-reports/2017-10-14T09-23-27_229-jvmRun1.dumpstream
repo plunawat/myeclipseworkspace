@@ -1,0 +1,221 @@
+# Created on 2017-10-14T09:23:28.565
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+# Created on 2017-10-14T09:23:28.568
+Unexpected IOException: I,1,java.class.path,C:\005CUsers\005Cparikshit\005Cworkspace\005CSeleniumRetsart\005Ctarget\005Ctest-classes;C:\005CUsers\005Cparikshit\005Cworkspace\005CSeleniumRetsart\005Ctarget\005Cclasses;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-java\005C3.6.0\005Cselenium-java-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-api\005C3.6.0\005Cselenium-api-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-chrome-driver\005C3.6.0\005Cselenium-chrome-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-edge-driver\005C3.6.0\005Cselenium-edge-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-firefox-driver\005C3.6.0\005Cselenium-firefox-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-ie-driver\005C3.6.0\005Cselenium-ie-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-opera-driver\005C3.6.0\005Cselenium-opera-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-remote-driver\005C3.6.0\005Cselenium-remote-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-safari-driver\005C3.6.0\005Cselenium-safari-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-support\005C3.6.0\005Cselenium-support-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Cnet\005Cbytebuddy\005Cbyte-buddy\005C1.7.5\005Cbyte-buddy-1.7.5.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Ccommons\005Ccommons-exec\005C1.3\005Ccommons-exec-1.3.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccommons-codec\005Ccommons-codec\005C1.10\005Ccommons-codec-1.10.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccommons-logging\005Ccommons-logging\005C1.2\005Ccommons-logging-1.2.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cgoogle\005Ccode\005Cgson\005Cgson\005C2.8.0\005Cgson-2.8.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cgoogle\005Cguava\005Cguava\005C23.0\005Cguava-23.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cgoogle\005Ccode\005Cfindbugs\005Cjsr305\005C1.3.9\005Cjsr305-1.3.9.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cgoogle\005Cerrorprone\005Cerror_prone_annotations\005C2.0.18\005Cerror_prone_annotations-2.0.18.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cgoogle\005Cj2objc\005Cj2objc-annotations\005C1.1\005Cj2objc-annotations-1.1.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Ccodehaus\005Cmojo\005Canimal-sniffer-annotations\005C1.14\005Canimal-sniffer-annotations-1.14.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Chttpcomponents\005Chttpclient\005C4.5.3\005Chttpclient-4.5.3.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Chttpcomponents\005Chttpcore\005C4.4.6\005Chttpcore-4.4.6.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Cnet\005Cjava\005Cdev\005Cjna\005Cjna\005C4.1.0\005Cjna-4.1.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Cnet\005Cjava\005Cdev\005Cjna\005Cjna-platform\005C4.1.0\005Cjna-platform-4.1.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Ctestng\005Ctestng\005C6.8\005Ctestng-6.8.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Cjunit\005Cjunit\005C4.10\005Cjunit-4.10.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Chamcrest\005Chamcrest-core\005C1.1\005Chamcrest-core-1.1.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cbeanshell\005Cbsh\005C2.0b4\005Cbsh-2.0b4.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cbeust\005Cjcommander\005C1.27\005Cjcommander-1.27.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cyaml\005Csnakeyaml\005C1.6\005Csnakeyaml-1.6.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Cpoi\005Cpoi\005C3.17\005Cpoi-3.17.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Ccommons\005Ccommons-collections4\005C4.1\005Ccommons-collections4-4.1.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Cmaven\005Csurefire\005Csurefire-testng-utils\005C2.20.1\005Csurefire-testng-utils-2.20.1.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Cmaven\005Csurefire\005Csurefire-grouper\005C2.20.1\005Csurefire-grouper-2.20.1.jar;
+
+
+# Created on 2017-10-14T09:23:28.572
+Unexpected IOException: I,1,java.vm.vendor,Oracle Corporation
+
+
+# Created on 2017-10-14T09:23:28.573
+Unexpected IOException: I,1,sun.arch.data.model,64
+
+
+# Created on 2017-10-14T09:23:28.573
+Unexpected IOException: I,1,user.variant,
+
+
+# Created on 2017-10-14T09:23:28.574
+Unexpected IOException: I,1,java.vendor.url,http://java.oracle.com/
+
+
+# Created on 2017-10-14T09:23:28.575
+Unexpected IOException: I,1,user.timezone,Asia/Calcutta
+
+
+# Created on 2017-10-14T09:23:28.576
+Unexpected IOException: I,1,os.name,Windows 8.1
+
+
+# Created on 2017-10-14T09:23:28.576
+Unexpected IOException: I,1,java.vm.specification.version,1.8
+
+
+# Created on 2017-10-14T09:23:28.577
+Unexpected IOException: I,1,user.country,US
+
+
+# Created on 2017-10-14T09:23:28.578
+Unexpected IOException: I,1,sun.java.launcher,SUN_STANDARD
+
+
+# Created on 2017-10-14T09:23:28.579
+Unexpected IOException: I,1,sun.boot.library.path,C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Cbin
+
+
+# Created on 2017-10-14T09:23:28.579
+Unexpected IOException: I,1,sun.java.command,C:\005CUsers\005CPARIKS~1\005CAppData\005CLocal\005CTemp\005Csurefire2627516936001651713\005Csurefirebooter3264095238726333335.jar C:\005CUsers\005Cparikshit\005CAppData\005CLocal\005CTemp\005Csurefire2627516936001651713 2017-10-14T09-23-27_229-jvmRun1 surefire5584988868322485886tmp surefire_06684304250983692221tmp
+
+
+# Created on 2017-10-14T09:23:28.581
+Unexpected IOException: I,1,surefire.test.class.path,C:\005CUsers\005Cparikshit\005Cworkspace\005CSeleniumRetsart\005Ctarget\005Ctest-classes;C:\005CUsers\005Cparikshit\005Cworkspace\005CSeleniumRetsart\005Ctarget\005Cclasses;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-java\005C3.6.0\005Cselenium-java-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-api\005C3.6.0\005Cselenium-api-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-chrome-driver\005C3.6.0\005Cselenium-chrome-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-edge-driver\005C3.6.0\005Cselenium-edge-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-firefox-driver\005C3.6.0\005Cselenium-firefox-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-ie-driver\005C3.6.0\005Cselenium-ie-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-opera-driver\005C3.6.0\005Cselenium-opera-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-remote-driver\005C3.6.0\005Cselenium-remote-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-safari-driver\005C3.6.0\005Cselenium-safari-driver-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cseleniumhq\005Cselenium\005Cselenium-support\005C3.6.0\005Cselenium-support-3.6.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Cnet\005Cbytebuddy\005Cbyte-buddy\005C1.7.5\005Cbyte-buddy-1.7.5.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Ccommons\005Ccommons-exec\005C1.3\005Ccommons-exec-1.3.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccommons-codec\005Ccommons-codec\005C1.10\005Ccommons-codec-1.10.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccommons-logging\005Ccommons-logging\005C1.2\005Ccommons-logging-1.2.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cgoogle\005Ccode\005Cgson\005Cgson\005C2.8.0\005Cgson-2.8.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cgoogle\005Cguava\005Cguava\005C23.0\005Cguava-23.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cgoogle\005Ccode\005Cfindbugs\005Cjsr305\005C1.3.9\005Cjsr305-1.3.9.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cgoogle\005Cerrorprone\005Cerror_prone_annotations\005C2.0.18\005Cerror_prone_annotations-2.0.18.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cgoogle\005Cj2objc\005Cj2objc-annotations\005C1.1\005Cj2objc-annotations-1.1.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Ccodehaus\005Cmojo\005Canimal-sniffer-annotations\005C1.14\005Canimal-sniffer-annotations-1.14.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Chttpcomponents\005Chttpclient\005C4.5.3\005Chttpclient-4.5.3.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Chttpcomponents\005Chttpcore\005C4.4.6\005Chttpcore-4.4.6.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Cnet\005Cjava\005Cdev\005Cjna\005Cjna\005C4.1.0\005Cjna-4.1.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Cnet\005Cjava\005Cdev\005Cjna\005Cjna-platform\005C4.1.0\005Cjna-platform-4.1.0.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Ctestng\005Ctestng\005C6.8\005Ctestng-6.8.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Cjunit\005Cjunit\005C4.10\005Cjunit-4.10.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Chamcrest\005Chamcrest-core\005C1.1\005Chamcrest-core-1.1.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cbeanshell\005Cbsh\005C2.0b4\005Cbsh-2.0b4.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Ccom\005Cbeust\005Cjcommander\005C1.27\005Cjcommander-1.27.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Cyaml\005Csnakeyaml\005C1.6\005Csnakeyaml-1.6.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Cpoi\005Cpoi\005C3.17\005Cpoi-3.17.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Ccommons\005Ccommons-collections4\005C4.1\005Ccommons-collections4-4.1.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Cmaven\005Csurefire\005Csurefire-testng-utils\005C2.20.1\005Csurefire-testng-utils-2.20.1.jar;C:\005CUsers\005Cparikshit\005C.m2\005Crepository\005Corg\005Capache\005Cmaven\005Csurefire\005Csurefire-grouper\005C2.20.1\005Csurefire-grouper-2.20.1.jar;
+
+
+# Created on 2017-10-14T09:23:28.582
+Unexpected IOException: I,1,sun.cpu.endian,little
+
+
+# Created on 2017-10-14T09:23:28.582
+Unexpected IOException: I,1,user.home,C:\005CUsers\005Cparikshit
+
+
+# Created on 2017-10-14T09:23:28.583
+Unexpected IOException: I,1,user.language,en
+
+
+# Created on 2017-10-14T09:23:28.583
+Unexpected IOException: I,1,java.specification.vendor,Oracle Corporation
+
+
+# Created on 2017-10-14T09:23:28.584
+Unexpected IOException: I,1,java.home,C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre
+
+
+# Created on 2017-10-14T09:23:28.585
+Unexpected IOException: I,1,basedir,C:\005CUsers\005Cparikshit\005Cworkspace\005CSeleniumRetsart
+
+
+# Created on 2017-10-14T09:23:28.586
+Unexpected IOException: I,1,file.separator,\005C
+
+
+# Created on 2017-10-14T09:23:28.587
+Unexpected IOException: I,1,line.separator,\000D\000A
+
+
+# Created on 2017-10-14T09:23:28.588
+Unexpected IOException: I,1,java.vm.specification.vendor,Oracle Corporation
+
+
+# Created on 2017-10-14T09:23:28.590
+Unexpected IOException: I,1,java.specification.name,Java Platform API Specification
+
+
+# Created on 2017-10-14T09:23:28.590
+Unexpected IOException: I,1,java.awt.graphicsenv,sun.awt.Win32GraphicsEnvironment
+
+
+# Created on 2017-10-14T09:23:28.592
+Unexpected IOException: I,1,surefire.real.class.path,C:\005CUsers\005CPARIKS~1\005CAppData\005CLocal\005CTemp\005Csurefire2627516936001651713\005Csurefirebooter3264095238726333335.jar
+
+
+# Created on 2017-10-14T09:23:28.592
+Unexpected IOException: I,1,sun.boot.class.path,C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Clib\005Cresources.jar;C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Clib\005Crt.jar;C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Clib\005Csunrsasign.jar;C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Clib\005Cjsse.jar;C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Clib\005Cjce.jar;C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Clib\005Ccharsets.jar;C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Clib\005Cjfr.jar;C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Cclasses
+
+
+# Created on 2017-10-14T09:23:28.594
+Unexpected IOException: I,1,user.script,
+
+
+# Created on 2017-10-14T09:23:28.595
+Unexpected IOException: I,1,sun.management.compiler,HotSpot 64-Bit Tiered Compilers
+
+
+# Created on 2017-10-14T09:23:28.596
+Unexpected IOException: I,1,java.runtime.version,1.8.0_45-b15
+
+
+# Created on 2017-10-14T09:23:28.597
+Unexpected IOException: I,1,user.name,parikshit
+
+
+# Created on 2017-10-14T09:23:28.598
+Unexpected IOException: I,1,path.separator,;
+
+
+# Created on 2017-10-14T09:23:28.599
+Unexpected IOException: I,1,os.version,6.3
+
+
+# Created on 2017-10-14T09:23:28.599
+Unexpected IOException: I,1,java.endorsed.dirs,C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Clib\005Cendorsed
+
+
+# Created on 2017-10-14T09:23:28.600
+Unexpected IOException: I,1,java.runtime.name,Java(TM) SE Runtime Environment
+
+
+# Created on 2017-10-14T09:23:28.601
+Unexpected IOException: I,1,file.encoding,Cp1252
+
+
+# Created on 2017-10-14T09:23:28.602
+Unexpected IOException: I,1,java.vm.name,Java HotSpot(TM) 64-Bit Server VM
+
+
+# Created on 2017-10-14T09:23:28.603
+Unexpected IOException: I,1,localRepository,C:\005CUsers\005Cparikshit\005C.m2\005Crepository
+
+
+# Created on 2017-10-14T09:23:28.604
+Unexpected IOException: I,1,java.vendor.url.bug,http://bugreport.sun.com/bugreport/
+
+
+# Created on 2017-10-14T09:23:28.605
+Unexpected IOException: I,1,java.io.tmpdir,C:\005CUsers\005CPARIKS~1\005CAppData\005CLocal\005CTemp\005C
+
+
+# Created on 2017-10-14T09:23:28.606
+Unexpected IOException: I,1,java.version,1.8.0_45
+
+
+# Created on 2017-10-14T09:23:28.606
+Unexpected IOException: I,1,user.dir,C:\005CUsers\005Cparikshit\005Cworkspace\005CSeleniumRetsart
+
+
+# Created on 2017-10-14T09:23:28.607
+Unexpected IOException: I,1,os.arch,amd64
+
+
+# Created on 2017-10-14T09:23:28.610
+Unexpected IOException: I,1,java.vm.specification.name,Java Virtual Machine Specification
+
+
+# Created on 2017-10-14T09:23:28.612
+Unexpected IOException: I,1,java.awt.printerjob,sun.awt.windows.WPrinterJob
+
+
+# Created on 2017-10-14T09:23:28.613
+Unexpected IOException: I,1,sun.os.patch.level,
+
+
+# Created on 2017-10-14T09:23:28.614
+Unexpected IOException: I,1,java.library.path,C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Cbin;C:\005CWINDOWS\005CSun\005CJava\005Cbin;C:\005CWINDOWS\005Csystem32;C:\005CWINDOWS;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;C:\005Coraclexe\005Capp\005Coracle\005Cproduct\005C11.2.0\005Cserver\005Cbin;C:\005CProgramData\005COracle\005CJava\005Cjavapath;C:\005CProgram Files (x86)\005CIntel\005CiCLS Client\005C;C:\005CProgram Files\005CIntel\005CiCLS Client\005C;C:\005CWINDOWS\005Csystem32;C:\005CWINDOWS;C:\005CWINDOWS\005CSystem32\005CWbem;C:\005CWINDOWS\005CSystem32\005CWindowsPowerShell\005Cv1.0\005C;C:\005CProgram Files\005CLenovo\005CFingerprint Manager Pro\005C;C:\005CProgram Files (x86)\005CCommon Files\005CLenovo;C:\005CProgram Files\005CCondusiv Technologies\005CExpressCache\005C;C:\005CSWTOOLS\005CReadyApps;C:\005CPRL\005CStudy\005CMaven3\005Cbin;C:\005CProgram Files\005CIntel\005CIntel(R) Management Engine Components\005CDAL;C:\005CProgram Files\005CIntel\005CIntel(R) Management Engine Components\005CIPT;C:\005CProgram Files (x86)\005CSkype\005CPhone\005C;C:\005CPRL\005CStudy\005CCurlWin\005Cbin;C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cbin;C:\005CProgram Files\005CGit\005Ccmd;C:\005CProgram Files (x86)\005CAndroid\005Candroid-sdk\005Ctools;C:\005CProgram Files (x86)\005CAndroid\005Candroid-sdk\005Cplatform-tools;C:\005CProgram Files\005CIntel\005CWiFi\005Cbin\005C;C:\005CProgram Files\005CCommon Files\005CIntel\005CWirelessCommon\005C;C:\005CProgram Files\005Cnodejs\005C;C:\005CUsers\005Cparikshit\005CAppData\005CLocal\005CMicrosoft\005CWindowsApps;C:\005CProgram Files\005CIntel\005CWiFi\005Cbin\005C;C:\005CProgram Files\005CCommon Files\005CIntel\005CWirelessCommon\005C;C:\005CUsers\005Cparikshit\005CAppData\005CRoaming\005Cnpm;C:\005CPRL\005CStudy\005CEclipseOxygen;;.
+
+
+# Created on 2017-10-14T09:23:28.615
+Unexpected IOException: I,1,java.vm.info,mixed mode
+
+
+# Created on 2017-10-14T09:23:28.616
+Unexpected IOException: I,1,java.vendor,Oracle Corporation
+
+
+# Created on 2017-10-14T09:23:28.617
+Unexpected IOException: I,1,java.vm.version,25.45-b02
+
+
+# Created on 2017-10-14T09:23:28.617
+Unexpected IOException: I,1,java.ext.dirs,C:\005CProgram Files\005CJava\005Cjdk1.8.0_45\005Cjre\005Clib\005Cext;C:\005CWINDOWS\005CSun\005CJava\005Clib\005Cext
+
+
+# Created on 2017-10-14T09:23:28.619
+Unexpected IOException: I,1,sun.io.unicode.encoding,UnicodeLittle
+
+
+# Created on 2017-10-14T09:23:28.619
+Unexpected IOException: I,1,java.class.version,52.0
+
+
+# Created on 2017-10-14T09:23:28.626
+Unexpected IOException: 1,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

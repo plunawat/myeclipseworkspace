@@ -1,0 +1,40 @@
+package com.prl.tests;
+
+import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.prl.poms.LoginStart;
+
+public class TestClass1 {
+
+	private WebDriver driver;
+
+	@BeforeClass
+	public void initializeDriver() throws IOException {
+		Runtime.getRuntime().exec("Taskkill /IM chromedriver.exe /F");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		driver = new ChromeDriver(options);
+	}
+
+	@Test
+	public void test1001() {
+		driver.get("http://rhel65:10000/unica/jsp/frameworklogin.jsp");
+		
+		//assertEquals("IBM Marketing Platform Login",driver.getTitle());
+		
+		LoginStart loginStart = new LoginStart(driver);
+		loginStart.enterUserName("asm_admin").enterPassword("Qwerty$007").clickLogin();
+		
+		assertEquals("IBM - Users", driver.getTitle());
+	}
+}

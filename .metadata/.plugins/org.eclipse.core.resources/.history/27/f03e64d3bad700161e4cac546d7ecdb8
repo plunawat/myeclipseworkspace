@@ -1,0 +1,46 @@
+package com.prl.nio;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+
+public class FilesTest {
+	public static void main(String[] args) throws IOException {
+		Path p1 = Paths.get("C:\\questtext.txt");
+		
+		/*
+		//Files.createFile(p1);
+		
+		Path p2 = Paths.get("C:\\Test99\\Test1.txt");
+		Files.createDirectories(p2.getParent());
+		if(!Files.exists(p2))	{
+			Files.createFile(p2);
+		}
+		
+		PrintWriter pw = new PrintWriter(new FileWriter(p2.toFile(),true));
+		pw.println("Test String");
+		pw.flush();
+		
+		Path p3 = Paths.get("C:\\Test99\\Test2.txt");
+		
+		if(!Files.exists(p3))	{
+			Files.createDirectory(p3);
+		}
+		
+		
+		
+		Files.copy(p2, p3,StandardCopyOption.REPLACE_EXISTING);
+		
+		*/
+		
+	}
+	
+	public static void deleteFiles(Path p1)	{
+		
+	}
+
+}

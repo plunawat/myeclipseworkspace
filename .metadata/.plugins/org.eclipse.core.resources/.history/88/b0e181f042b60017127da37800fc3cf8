@@ -1,0 +1,18 @@
+package com.prl;
+
+import com.google.gson.Gson;
+
+public class GSONTest {
+	public static void main(String[] args) {
+		Gson gSon = new Gson();
+		
+		
+	}
+
+}
+
+class Person1	{
+	private String name;
+	private int  age;
+	private String PAN; 
+}

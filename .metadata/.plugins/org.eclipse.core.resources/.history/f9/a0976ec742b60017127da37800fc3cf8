@@ -1,0 +1,10 @@
+package com.prl;
+
+import com.google.gson.Gson;
+
+public class GSONTest {
+	public static void main(String[] args) {
+		Gson gSon = new Gson();
+	}
+
+}

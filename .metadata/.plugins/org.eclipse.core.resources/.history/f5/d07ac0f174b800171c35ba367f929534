@@ -1,0 +1,9 @@
+package com.prl;
+
+public class LamdaTest {
+
+}
+
+interface I1	{
+	public int sumTest(int i1, int i2);
+}

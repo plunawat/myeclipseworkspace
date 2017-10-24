@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parent-Suite" duration-ms="13970" started-at="2017-10-22T16:06:45Z" finished-at="2017-10-22T16:06:59Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="13970" started-at="2017-10-22T16:06:45Z" finished-at="2017-10-22T16:06:59Z">
+      <class name="com.prl.tests.TestClass1">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5]" name="initializeDriver" is-config="true" duration-ms="4522" started-at="2017-10-22T21:36:45Z" finished-at="2017-10-22T21:36:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="FAIL" signature="test1001()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5]" name="test1001" duration-ms="1070" started-at="2017-10-22T21:36:50Z" finished-at="2017-10-22T21:36:51Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [IBM Marketing Platform Login] but found [IBM - Users]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [IBM Marketing Platform Login] but found [IBM - Users]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at com.prl.tests.TestClass1.test1001(TestClass1.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1001 -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5]" name="cleanUp" is-config="true" duration-ms="52" started-at="2017-10-22T21:36:51Z" finished-at="2017-10-22T21:36:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5]" name="initializeDriver" is-config="true" duration-ms="2541" started-at="2017-10-22T21:36:51Z" finished-at="2017-10-22T21:36:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="test1001()[pri:0, instance:com.prl.tests.TestClass1@60addb54]" name="test1001" duration-ms="3634" started-at="2017-10-22T21:36:53Z" finished-at="2017-10-22T21:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1001 -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5]" name="cleanUp" is-config="true" duration-ms="44" started-at="2017-10-22T21:36:57Z" finished-at="2017-10-22T21:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="SKIP" signature="test1002()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5]" name="test1002" duration-ms="0" started-at="2017-10-22T21:36:57Z" depends-on-methods="com.prl.tests.TestClass1.test1001" finished-at="2017-10-22T21:36:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestClass1.test1002()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestClass1.test1002()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1002 -->
+        <test-method status="PASS" signature="quitWebDriver()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5]" name="quitWebDriver" is-config="true" duration-ms="616" started-at="2017-10-22T21:36:57Z" finished-at="2017-10-22T21:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitWebDriver -->
+        <test-method status="PASS" signature="test1002()[pri:0, instance:com.prl.tests.TestClass1@60addb54]" name="test1002" duration-ms="741" started-at="2017-10-22T21:36:58Z" depends-on-methods="com.prl.tests.TestClass1.test1001" finished-at="2017-10-22T21:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1002 -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5]" name="cleanUp" is-config="true" duration-ms="59" started-at="2017-10-22T21:36:58Z" finished-at="2017-10-22T21:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="quitWebDriver()[pri:0, instance:com.prl.tests.TestClass1@3f2a3a5]" name="quitWebDriver" is-config="true" duration-ms="671" started-at="2017-10-22T21:36:58Z" finished-at="2017-10-22T21:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitWebDriver -->
+      </class> <!-- com.prl.tests.TestClass1 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Parent-Suite -->
+</testng-results>

@@ -1,0 +1,18 @@
+# Created on 2017-10-08T16:05:34.602
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+# Created on 2017-10-08T16:05:35.129
+Unexpected IOException with stream: Oct 08, 2017 4:05:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+
+# Created on 2017-10-08T16:05:35.151
+Unexpected IOException: 5,1,com.prl.TestClass1,testMethod1(com.prl.TestClass1),com.prl.TestClass1,null,null
+
+

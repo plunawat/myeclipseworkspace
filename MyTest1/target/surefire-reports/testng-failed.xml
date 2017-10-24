@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="Param" value="Suite Level"/>
+  <listeners>
+    <listener class-name="com.prl.ListenerTest"/>
+  </listeners>
+  <test name="Test1">
+    <classes>
+      <class name="com.prl.TestClass2"/>
+      <class name="com.prl.TestClass3"/>
+    </classes>
+  </test> <!-- Test1 -->
+  <test name="Test2">
+    <classes>
+      <class name="com.prl.TestClass4"/>
+    </classes>
+  </test> <!-- Test2 -->
+</suite> <!-- Failed suite [Suite] -->

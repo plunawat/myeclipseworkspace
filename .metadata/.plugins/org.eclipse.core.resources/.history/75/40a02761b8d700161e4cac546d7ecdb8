@@ -1,0 +1,27 @@
+package com.prl.nio;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class FilesTest {
+	public static void main(String[] args) throws IOException {
+		Path p1 = Paths.get("C:\\questtext.txt");
+		//Files.createFile(p1);
+		
+		Path p2 = Paths.get("C:\\Test99\\Test1.txt");
+		Files.createDirectories(p2);
+		
+		Path p3 = Paths.get("C:\\Test101");
+		if(!Files.exists(p3))	{
+			Files.createDirectory(p3);
+		}
+		
+		Files.copy(p2, p3);
+		
+		
+		
+	}
+
+}

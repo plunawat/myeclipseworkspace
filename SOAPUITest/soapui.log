@@ -1,0 +1,199 @@
+2017-01-31 15:52:38,668 WARN  [SoapUI] Missing folder [C:\Users\parikshit\workspace\SOAPUITest\ext] for external libraries
+2017-01-31 15:52:39,453 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\parikshit\soapui-settings.xml]
+2017-01-31 15:52:40,583 INFO  [PluginManager] 0 plugins loaded in 3 ms
+2017-01-31 15:52:40,583 INFO  [DefaultSoapUICore] All plugins loaded
+2017-01-31 15:52:42,486 INFO  [WsdlProject] Loaded project from [file:/C:/PRL/Study/USZipCodeSOAP-soapui-project.xml]
+2017-01-31 15:52:46,029 INFO  [log] <Results>
+    <ResultSet fetchSize="10">
+        <Row rowNumber="1">
+            <ID>01</ID>
+            <FIRST_NAME>Jason</FIRST_NAME>
+            <LAST_NAME>Martin</LAST_NAME>
+            <START_DATE>1996-07-25 00:00:00.0</START_DATE>
+            <END_DATE>2006-07-25 00:00:00.0</END_DATE>
+            <SALARY>1234.56</SALARY>
+            <CITY>Toronto</CITY>
+            <DESCRIPTION>Programmer</DESCRIPTION>
+        </Row>
+        <Row rowNumber="2">
+            <ID>02</ID>
+            <FIRST_NAME>Alison</FIRST_NAME>
+            <LAST_NAME>Mathews</LAST_NAME>
+            <START_DATE>1976-03-21 00:00:00.0</START_DATE>
+            <END_DATE>1986-02-21 00:00:00.0</END_DATE>
+            <SALARY>6661.78</SALARY>
+            <CITY>Vancouver</CITY>
+            <DESCRIPTION>Tester</DESCRIPTION>
+        </Row>
+        <Row rowNumber="3">
+            <ID>03</ID>
+            <FIRST_NAME>James</FIRST_NAME>
+            <LAST_NAME>Smith</LAST_NAME>
+            <START_DATE>1978-12-12 00:00:00.0</START_DATE>
+            <END_DATE>1990-03-15 00:00:00.0</END_DATE>
+            <SALARY>6544.78</SALARY>
+            <CITY>Vancouver</CITY>
+            <DESCRIPTION>Tester</DESCRIPTION>
+        </Row>
+        <Row rowNumber="4">
+            <ID>04</ID>
+            <FIRST_NAME>Celia</FIRST_NAME>
+            <LAST_NAME>Rice</LAST_NAME>
+            <START_DATE>1982-10-24 00:00:00.0</START_DATE>
+            <END_DATE>1999-04-21 00:00:00.0</END_DATE>
+            <SALARY>2344.78</SALARY>
+            <CITY>Vancouver</CITY>
+            <DESCRIPTION>Manager</DESCRIPTION>
+        </Row>
+        <Row rowNumber="5">
+            <ID>05</ID>
+            <FIRST_NAME>Robert</FIRST_NAME>
+            <LAST_NAME>Black</LAST_NAME>
+            <START_DATE>1984-01-15 00:00:00.0</START_DATE>
+            <END_DATE>1998-08-08 00:00:00.0</END_DATE>
+            <SALARY>2334.78</SALARY>
+            <CITY>Vancouver</CITY>
+            <DESCRIPTION>Tester</DESCRIPTION>
+        </Row>
+        <Row rowNumber="6">
+            <ID>06</ID>
+            <FIRST_NAME>Linda</FIRST_NAME>
+            <LAST_NAME>Green</LAST_NAME>
+            <START_DATE>1987-07-30 00:00:00.0</START_DATE>
+            <END_DATE>1996-01-04 00:00:00.0</END_DATE>
+            <SALARY>4322.78</SALARY>
+            <CITY>New York</CITY>
+            <DESCRIPTION>Tester</DESCRIPTION>
+        </Row>
+        <Row rowNumber="7">
+            <ID>07</ID>
+            <FIRST_NAME>David</FIRST_NAME>
+            <LAST_NAME>Larry</LAST_NAME>
+            <START_DATE>1990-12-31 00:00:00.0</START_DATE>
+            <END_DATE>1998-02-12 00:00:00.0</END_DATE>
+            <SALARY>7897.78</SALARY>
+            <CITY>New York</CITY>
+            <DESCRIPTION>Manager</DESCRIPTION>
+        </Row>
+        <Row rowNumber="8">
+            <ID>08</ID>
+            <FIRST_NAME>James</FIRST_NAME>
+            <LAST_NAME>Cat</LAST_NAME>
+            <START_DATE>1996-09-17 00:00:00.0</START_DATE>
+            <END_DATE>2002-04-15 00:00:00.0</END_DATE>
+            <SALARY>1232.78</SALARY>
+            <CITY>Vancouver</CITY>
+            <DESCRIPTION>Tester</DESCRIPTION>
+        </Row>
+    </ResultSet>
+</Results>
+
+2017-01-31 15:52:46,481 INFO  [log] 04
+2017-01-31 15:52:47,936 INFO  [log] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetInfoByZIPResponse xmlns="http://www.webserviceX.NET">
+         <GetInfoByZIPResult>
+            <NewDataSet xmlns="">
+               <Table>
+                  <CITY>Lowell</CITY>
+                  <STATE>MA</STATE>
+                  <ZIP>01854</ZIP>
+                  <AREA_CODE>978</AREA_CODE>
+                  <TIME_ZONE>E</TIME_ZONE>
+               </Table>
+            </NewDataSet>
+         </GetInfoByZIPResult>
+      </GetInfoByZIPResponse>
+   </soap:Body>
+</soap:Envelope>
+2017-01-31 15:52:47,941 INFO  [log] 
+               
+2017-01-31 15:52:47,986 INFO  [log] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetInfoByZIPResponse xmlns="http://www.webserviceX.NET">
+         <GetInfoByZIPResult>
+            <NewDataSet xmlns="">
+               <Table>
+                  <CITY>Lowell</CITY>
+                  <STATE>MA</STATE>
+                  <ZIP>01854</ZIP>
+                  <AREA_CODE>978</AREA_CODE>
+                  <TIME_ZONE>E</TIME_ZONE>
+               </Table>
+            </NewDataSet>
+         </GetInfoByZIPResult>
+      </GetInfoByZIPResponse>
+   </soap:Body>
+</soap:Envelope>
+2017-01-31 15:52:48,378 INFO  [log] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetInfoByZIPResponse xmlns="http://www.webserviceX.NET">
+         <GetInfoByZIPResult>
+            <NewDataSet xmlns="">
+               <Table>
+                  <CITY>Tewksbury</CITY>
+                  <STATE>MA</STATE>
+                  <ZIP>01876</ZIP>
+                  <AREA_CODE>978</AREA_CODE>
+                  <TIME_ZONE>E</TIME_ZONE>
+               </Table>
+            </NewDataSet>
+         </GetInfoByZIPResult>
+      </GetInfoByZIPResponse>
+   </soap:Body>
+</soap:Envelope>
+2017-01-31 15:52:48,381 INFO  [log] 
+               
+2017-01-31 15:52:48,382 INFO  [log] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetInfoByZIPResponse xmlns="http://www.webserviceX.NET">
+         <GetInfoByZIPResult>
+            <NewDataSet xmlns="">
+               <Table>
+                  <CITY>Tewksbury</CITY>
+                  <STATE>MA</STATE>
+                  <ZIP>01876</ZIP>
+                  <AREA_CODE>978</AREA_CODE>
+                  <TIME_ZONE>E</TIME_ZONE>
+               </Table>
+            </NewDataSet>
+         </GetInfoByZIPResult>
+      </GetInfoByZIPResponse>
+   </soap:Body>
+</soap:Envelope>
+2017-01-31 15:53:02,405 INFO  [log] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetInfoByZIPResponse xmlns="http://www.webserviceX.NET">
+         <GetInfoByZIPResult>
+            <NewDataSet xmlns="">
+               <Table>
+                  <CITY>Dracut</CITY>
+                  <STATE>MA</STATE>
+                  <ZIP>01826</ZIP>
+                  <AREA_CODE>978</AREA_CODE>
+                  <TIME_ZONE>E</TIME_ZONE>
+               </Table>
+            </NewDataSet>
+         </GetInfoByZIPResult>
+      </GetInfoByZIPResponse>
+   </soap:Body>
+</soap:Envelope>
+2017-01-31 15:53:02,409 INFO  [log] 
+               
+2017-01-31 15:53:02,409 INFO  [log] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetInfoByZIPResponse xmlns="http://www.webserviceX.NET">
+         <GetInfoByZIPResult>
+            <NewDataSet xmlns="">
+               <Table>
+                  <CITY>Dracut</CITY>
+                  <STATE>MA</STATE>
+                  <ZIP>01826</ZIP>
+                  <AREA_CODE>978</AREA_CODE>
+                  <TIME_ZONE>E</TIME_ZONE>
+               </Table>
+            </NewDataSet>
+         </GetInfoByZIPResult>
+      </GetInfoByZIPResponse>
+   </soap:Body>
+</soap:Envelope>

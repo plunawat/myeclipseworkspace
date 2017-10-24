@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Parent-Suite]" parallel="tests">
+  <test name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="com.prl.tests.TestClass1">
+        <methods>
+          <include name="test1002"/>
+          <include name="cleanUp"/>
+          <include name="test1001"/>
+          <include name="test1001"/>
+          <include name="initializeDriver"/>
+          <include name="quitWebDriver"/>
+        </methods>
+      </class> <!-- com.prl.tests.TestClass1 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Parent-Suite] -->

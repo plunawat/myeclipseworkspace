@@ -1,0 +1,54 @@
+package com.prl;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+public class TestClass1 {
+
+	private WebDriver driver;
+
+	@BeforeSuite
+	public void initiateDriver() throws IOException {
+
+		Runtime.getRuntime().exec("Taskkill /IM chromedriver.exe /F");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		driver = new ChromeDriver(options);
+
+		/*
+		 * driver.manage().timeouts().pageLoadTimeout(1, TimeUnit.MILLISECONDS);
+		 * driver.manage().timeouts().setScriptTimeout(5, TimeUnit.MILLISECONDS);
+		 */
+
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+
+	@Test
+	public void testMethod1() {
+//		driver.manage().window().maximize();
+		driver.get("file:///C:/Users/parikshit/workspace/HTMLPages/DelayElementAdded.html");
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		WebElement el = new WebDriverWait(driver,15).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[.='Water']")));
+		
+		Assert.assertEquals("Water", el.getText());
+	}
+
+	@AfterSuite
+	public void quitDriver() {
+		//driver.quit();
+	}
+
+}
