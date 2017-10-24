@@ -26,7 +26,7 @@ public class LamdaTest {
 //		Lambda expression returning value with curly braces
 		Calculator division = (i1,i2) -> {return i2/i1;};
 		
-//		Usage of interfaces instances defined using lambda expression
+		
 		int i3 = sum.mathOperation(100, 900);
 		int i4 = multiply.mathOperation(100, 900);
 	}
